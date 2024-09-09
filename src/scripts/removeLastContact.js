@@ -5,7 +5,7 @@ export const removeLastContact = async () => {
   const contacts = await readContacts();
   contacts.pop();
 
-  writeContacts(JSON.stringify(contacts));
+  writeContacts(JSON.stringify(contacts), null, 2);
 };
 
 removeLastContact();
